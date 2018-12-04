@@ -53,7 +53,7 @@ findAllLCS(a, b, m, n, cur):
 
 
 ## How to compile
-g++ -o lcs_dp lcs_dp.cpp
+    g++ -o lcs_dp lcs_dp.cpp
 
 ## Sample input and output
 #### Case1: n=14, x=12642, y=5735
