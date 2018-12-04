@@ -1,10 +1,10 @@
 # 260p_Algo
 ### Algorithm description
 We break down into functions:
-##### decToBinary(x, n)
+#### decToBinary(x, n)
 Convert a integer x into a n-length bit string <br>
 (Note: need pedding 0’s in the front to make every integer as n-bit string.)
-##### findLcsLength(a, b, n)
+#### findLcsLength(a, b, n)
 A dp method to find the LCS length by recursion function
 ```
 if a[i-1] == b[i-1]
@@ -12,7 +12,7 @@ if a[i-1] == b[i-1]
 else
     LCS[i][j] = max(LCS[i][j-1]+LCS[i-1][j])
 ```
-##### findAllLCS(a, b, m, n, cur)
+#### findAllLCS(a, b, m, n, cur)
 A recursive function to backtrack and retrieve all LCS bits accordingly.
 ```
 findAllLCS(a, b, m, n, cur):
@@ -30,11 +30,11 @@ findAllLCS(a, b, m, n, cur):
 
 
 ### Analysis of the asymptotic worst-case time complexity (θ-notation)
-##### decToBinary(x, n)
+#### decToBinary(x, n)
 θ (n)
-##### findLcsLength(a, b, n)
+#### findLcsLength(a, b, n)
 θ (n^2), with space memory to store all LCS[i][j] values.
-##### findAllLCS(a, b, m, n, cur)
+#### findAllLCS(a, b, m, n, cur)
 θ (2^(2n)), (in our case, input m=n)
 
 
@@ -43,7 +43,7 @@ findAllLCS(a, b, m, n, cur):
 g++ -o lcs_dp lcs_dp.cpp
 
 ### Sample input and output
-##### Case1: n=14, x=12642, y=5735
+#### Case1: n=14, x=12642, y=5735
 ```
 string length(n) = 14
 X=(12642)=11000101100010
@@ -64,7 +64,7 @@ lcs 11:110011001
 lcs 12:111011001
 ```
 
-##### Case2: n=20, x=948575, 8475
+#### Case2: n=20, x=948575, 8475
 ```
 string length(n) = 20
 X=(948575)=11100111100101011111
@@ -80,7 +80,7 @@ lcs 6:001001001111
 lcs 7:100001001111
 ```
 
-##### Case3: n=20, x=4095, y=0
+#### Case3: n=20, x=4095, y=0
 ```
 string length(n) = 12
 X=(4095)=111111111111
