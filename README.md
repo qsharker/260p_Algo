@@ -1,4 +1,18 @@
 # 260p_Algo
+### Requirements
+Implement and analyze the time complexity of an algorithm that, given n in the range [3:20], and two integers x and y that are each in the range [0:2n-1], determines the number of distinct strings that are LCS's of binstring(n,x) and binstring(n,y) and displays them.
+Your program should
+
+- ask the user to input an integer n within limits
+- ask the user to input an integer x within limits
+- ask the user to input an integer y within limits
+- determine the number of distinct LCS's
+- display
+  - the input parameter values (n, x, y)
+  - bitstrings binstring(n,x) and binstring(n,y)
+  - the determined number of distinct LCS's
+  - the list of those LCS's
+
 ### Algorithm description
 We break down into functions:
 #### decToBinary(x, n)
