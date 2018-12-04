@@ -1,6 +1,7 @@
 # 260p_Algo
-### Requirements
-Implement and analyze the time complexity of an algorithm that, given n in the range [3:20], and two integers x and y that are each in the range [0:2n-1], determines the number of distinct strings that are LCS's of binstring(n,x) and binstring(n,y) and displays them.
+## Requirements
+Implement and analyze the time complexity of an algorithm that, given n in the range [3:20], and two integers x and y that are each in the range [0:2n-1], determines the number of distinct strings that are LCS's of binstring(n,x) and binstring(n,y) and displays them.  
+
 Your program should
 
 - ask the user to input an integer n within limits
@@ -13,10 +14,10 @@ Your program should
   - the determined number of distinct LCS's
   - the list of those LCS's
 
-### Algorithm description
+## Algorithm description
 We break down into functions:
 #### decToBinary(x, n)
-Convert a integer x into a n-length bit string <br>
+Convert a integer x into a n-length bit string.  
 (Note: need pedding 0’s in the front to make every integer as n-bit string.)
 #### findLcsLength(a, b, n)
 A dp method to find the LCS length by recursion function
@@ -42,8 +43,7 @@ findAllLCS(a, b, m, n, cur):
 (stop on lcs[n][m]==0, to get whole LCS subsequence returned in “cur”)
 ```
 
-
-### Analysis of the asymptotic worst-case time complexity (θ-notation)
+## Analysis of the asymptotic worst-case time complexity (θ-notation)
 #### decToBinary(x, n)
 θ (n)
 #### findLcsLength(a, b, n)
@@ -52,11 +52,10 @@ findAllLCS(a, b, m, n, cur):
 θ (2^(2n)), (in our case, input m=n)
 
 
-
-### How to compile
+## How to compile
 g++ -o lcs_dp lcs_dp.cpp
 
-### Sample input and output
+## Sample input and output
 #### Case1: n=14, x=12642, y=5735
 ```
 string length(n) = 14
