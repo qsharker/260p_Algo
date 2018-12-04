@@ -48,7 +48,7 @@ int findLcsLength(string Xs, string Ys, unsigned int n)
 
 void findAllLCS(string a, string b, int n, int m, string cur) {
     if (lcs[n][m]==0) {
-        aoLCS.insert(cur);
+        if (cur.length() > 0) aoLCS.insert(cur);
         return;
     }
 
